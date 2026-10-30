@@ -46,15 +46,17 @@ bool ClangeMeMod::load() {
 bool ClangeMeMod::enable() {
     auto &self = getSelf();
     self.getLogger().debug("Enabling...");
+
     if (!mConfig.enabled) {
         self.getLogger().info("JavaCombat is disabled by config");
         return true;
     }
 
     self.getLogger().info("JavaCombat enabled!");
-self.getLogger().info("Combat mode: {}", mConfig.combat_mode);
-}
+    self.getLogger().info("Combat mode: {}", mConfig.combat_mode);
 
+    return true;
+}
 bool ClangeMeMod::disable() {
     getSelf().getLogger().debug("Disabling...");
     // Undo enable-time state here.
