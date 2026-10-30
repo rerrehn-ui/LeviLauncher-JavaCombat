@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(levilauncher_android_mod_template LANGUAGES CXX)
+project(LeviLauncher_JavaCombat LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
-set(MOD_ID "clange_me" CACHE STRING "LeviLauncher mod package directory name")
-set(MOD_NAME "Clange Me Mod" CACHE STRING "LeviLauncher mod display name")
-set(MOD_AUTHOR "clange_me" CACHE STRING "LeviLauncher mod author")
-set(MOD_VERSION "0.1.0" CACHE STRING "LeviLauncher mod version")
-set(MOD_LIBRARY_NAME "clange_me" CACHE STRING "Native library name without lib prefix or .so suffix")
+set(MOD_ID "java_combat" CACHE STRING "LeviLauncher mod package directory name")
+set(MOD_NAME "JavaCombat" CACHE STRING "LeviLauncher mod display name")
+set(MOD_AUTHOR "JavaCombatDev" CACHE STRING "LeviLauncher mod author")
+set(MOD_VERSION "1.0.0" CACHE STRING "LeviLauncher mod version")
+set(MOD_LIBRARY_NAME "java_combat" CACHE STRING "Native library name without lib prefix or .so suffix")
 set(MOD_MINECRAFT_VERSIONS "[\"1.26.*\"]" CACHE STRING "Raw JSON array for manifest minecraft_versions")
 set(MOD_ICON "" CACHE STRING "Optional package-relative icon path, such as icon.png")
 
