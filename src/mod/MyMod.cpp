@@ -52,10 +52,11 @@ bool ClangeMeMod::enable() {
         return true;
     }
 
-    self.getLogger().info("JavaCombat enabled!");
+        self.getLogger().info("JavaCombat enabled!");
     self.getLogger().info("Combat mode: {}", mConfig.combat_mode);
 
     return true;
+}
 }
 bool ClangeMeMod::disable() {
     getSelf().getLogger().debug("Disabling...");
